@@ -1,168 +1,59 @@
 {
   "students": {
-    "bece3f94-674f-48fa-887f-0ef10d2aa1a6": {
-      "id": "bece3f94-674f-48fa-887f-0ef10d2aa1a6",
-      "createdAt": 1774562317851,
+    "7a045829-8f61-498c-885f-d744bdb48902": {
+      "id": "7a045829-8f61-498c-885f-d744bdb48902",
+      "name": "Gaurav",
+      "createdAt": 1774627386702,
       "mastery": {
-        "KC1": 2,
-        "KC2": 2,
-        "KC3": 2
+        "KC1": 20,
+        "KC2": 20,
+        "KC3": 20,
+        "KC4": 20,
+        "KC5": 20,
+        "KC6": 20,
+        "KC7": 20
       },
-      "current": {
-        "question_id": "Q3",
-        "hintLevel": 0
-      },
-      "history": [
-        {
-          "timestamp": 1774562322288,
-          "question_id": "Q1",
-          "kc": "KC1",
-          "selected_option": "1/2",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562333474,
-          "question_id": "Q4",
-          "kc": "KC2",
-          "selected_option": "2/4",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562349117,
-          "question_id": "Q7",
-          "kc": "KC3",
-          "selected_option": "1/2 is greater",
-          "correct": false,
-          "misconception": "F001",
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562373717,
-          "question_id": "Q8",
-          "kc": "KC3",
-          "selected_option": "3/4 is greater",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562385342,
-          "question_id": "Q3",
-          "kc": "KC1",
-          "selected_option": "2/3",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562394642,
-          "question_id": "Q5",
-          "kc": "KC2",
-          "selected_option": "6/8",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562400463,
-          "question_id": "Q9",
-          "kc": "KC3",
-          "selected_option": "4/6 is greater",
-          "correct": false,
-          "misconception": "F001",
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562405595,
-          "question_id": "Q7",
-          "kc": "KC3",
-          "selected_option": "2/3 is greater",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562408994,
-          "question_id": "Q7",
-          "kc": "KC3",
-          "selected_option": "2/3 is greater",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
-        },
-        {
-          "timestamp": 1774562412752,
-          "question_id": "Q2",
-          "kc": "KC1",
-          "selected_option": "3/4",
-          "correct": true,
-          "misconception": null,
-          "updated_mastery": {
-            "KC1": 2,
-            "KC2": 2,
-            "KC3": 2
-          }
+      "current": null,
+      "history": [],
+      "remediation": null,
+      "questionStates": {},
+      "metrics": {
+        "session_start_time": 1774627386702,
+        "session_end_time": null,
+        "time_taken_per_question": {},
+        "question_timestamp": {},
+        "misconception_frequency": {
+          "F001": 0,
+          "F002": 0,
+          "F003": 0,
+          "F004": 0
         }
-      ]
+      },
+      "lessonsViewed": []
     },
-    "b4572d27-e5c1-4d3f-be40-f896a1d95a27": {
-      "id": "b4572d27-e5c1-4d3f-be40-f896a1d95a27",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774593128793,
+    "0ede9f6c-f75b-4308-be48-4f885505ddf8": {
+      "id": "0ede9f6c-f75b-4308-be48-4f885505ddf8",
+      "name": "Gaurav",
+      "createdAt": 1774627399019,
       "mastery": {
-        "KC1": 32,
-        "KC2": 36,
-        "KC3": 36
+        "KC1": 26,
+        "KC2": 20,
+        "KC3": 20,
+        "KC4": 20,
+        "KC5": 20,
+        "KC6": 20,
+        "KC7": 20
       },
       "current": {
         "question_id": "KC1_Q2",
-        "hintLevel": 0,
-        "hintsUsed": 0,
-        "attempts": 0
+        "hintLevel": 3,
+        "hintsUsed": 3,
+        "attempts": 0,
+        "startedAt": 1774627416597
       },
       "history": [
         {
-          "timestamp": 1774593135096,
+          "timestamp": 1774627399093,
           "question_id": "KC1_Q1",
           "kc": "KC1",
           "selected_option": "1/2",
@@ -171,401 +62,342 @@
           "hints_used": 0,
           "attempts": 1,
           "updated_mastery": {
-            "KC1": 32,
-            "KC2": 36,
-            "KC3": 36
-          }
+            "KC1": 26,
+            "KC2": 20,
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 32
+        }
+      ],
+      "remediation": null,
+      "questionStates": {
+        "KC1_Q1": "correct"
+      },
+      "metrics": {
+        "session_start_time": 1774627406473,
+        "session_end_time": null,
+        "time_taken_per_question": {
+          "KC1_Q1": 32
         },
+        "question_timestamp": {
+          "KC1_Q1": 1774627399093
+        },
+        "misconception_frequency": {
+          "F001": 0,
+          "F002": 0,
+          "F003": 0,
+          "F004": 0
+        }
+      },
+      "lessonsViewed": []
+    },
+    "3d3b9496-72df-4da4-ac34-f28cd76c59fb": {
+      "id": "3d3b9496-72df-4da4-ac34-f28cd76c59fb",
+      "name": "Student",
+      "createdAt": 1774627500277,
+      "mastery": {
+        "KC1": 20,
+        "KC2": 20,
+        "KC3": 20,
+        "KC4": 20,
+        "KC5": 20,
+        "KC6": 20,
+        "KC7": 20
+      },
+      "current": {
+        "question_id": "KC2_Q1",
+        "hintLevel": 1,
+        "hintsUsed": 1,
+        "attempts": 0,
+        "startedAt": 1774627612549
+      },
+      "history": [],
+      "remediation": null,
+      "questionStates": {
+        "KC1_Q1": "skipped",
+        "KC2_Q1": "skipped",
+        "KC3_Q1": "skipped"
+      },
+      "metrics": {
+        "session_start_time": 1774627500277,
+        "session_end_time": null,
+        "time_taken_per_question": {},
+        "question_timestamp": {},
+        "misconception_frequency": {
+          "F001": 0,
+          "F002": 0,
+          "F003": 0,
+          "F004": 0
+        }
+      },
+      "lessonsViewed": [
+        "KC1",
+        "KC2"
+      ]
+    },
+    "381d0a72-ff6b-4354-8e7e-48a3f7c32cd3": {
+      "id": "381d0a72-ff6b-4354-8e7e-48a3f7c32cd3",
+      "name": "Gaurav",
+      "createdAt": 1774627962724,
+      "mastery": {
+        "KC1": 18,
+        "KC2": 20,
+        "KC3": 20,
+        "KC4": 20,
+        "KC5": 20,
+        "KC6": 20,
+        "KC7": 20
+      },
+      "current": {
+        "question_id": "KC1_Q3",
+        "hintLevel": 0,
+        "hintsUsed": 0,
+        "attempts": 6,
+        "startedAt": 1774627986895
+      },
+      "history": [
         {
-          "timestamp": 1774593148288,
-          "question_id": "KC2_Q1",
-          "kc": "KC2",
-          "selected_option": "2/4",
+          "timestamp": 1774627970714,
+          "question_id": "KC1_Q1",
+          "kc": "KC1",
+          "selected_option": "1/2",
           "correct": true,
           "misconception": null,
           "hints_used": 0,
           "attempts": 1,
           "updated_mastery": {
-            "KC1": 32,
-            "KC2": 36,
-            "KC3": 36
-          }
+            "KC1": 18,
+            "KC2": 20,
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 3695
         },
         {
-          "timestamp": 1774593165056,
-          "question_id": "KC3_Q1",
-          "kc": "KC3",
-          "selected_option": "2/3",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 32,
-            "KC2": 36,
-            "KC3": 36
-          }
-        },
-        {
-          "timestamp": 1774593176805,
+          "timestamp": 1774627991383,
           "question_id": "KC1_Q3",
           "kc": "KC1",
           "selected_option": "2/3",
           "correct": true,
           "misconception": null,
-          "hints_used": 2,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 32,
-            "KC2": 36,
-            "KC3": 36
-          }
-        },
-        {
-          "timestamp": 1774593182994,
-          "question_id": "KC2_Q2",
-          "kc": "KC2",
-          "selected_option": "6/8",
-          "correct": true,
-          "misconception": null,
           "hints_used": 0,
           "attempts": 1,
           "updated_mastery": {
-            "KC1": 32,
-            "KC2": 36,
-            "KC3": 36
-          }
+            "KC1": 18,
+            "KC2": 20,
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 4440
         },
         {
-          "timestamp": 1774593187051,
-          "question_id": "KC3_Q2",
-          "kc": "KC3",
+          "timestamp": 1774628000320,
+          "question_id": "KC1_Q2",
+          "kc": "KC1",
           "selected_option": "3/4",
           "correct": true,
           "misconception": null,
           "hints_used": 0,
           "attempts": 1,
           "updated_mastery": {
-            "KC1": 32,
-            "KC2": 36,
-            "KC3": 36
-          }
-        }
-      ],
-      "remediation": null
-    },
-    "90252e5b-b566-4a41-b36b-8bab1e5659c0": {
-      "id": "90252e5b-b566-4a41-b36b-8bab1e5659c0",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774593510575,
-      "mastery": {
-        "KC1": 26,
-        "KC2": 28,
-        "KC3": 20
-      },
-      "current": {
-        "question_id": "KC3_Q1",
-        "hintLevel": 0,
-        "hintsUsed": 0,
-        "attempts": 0
-      },
-      "history": [
-        {
-          "timestamp": 1774593522130,
-          "question_id": "KC1_Q1",
-          "kc": "KC1",
-          "selected_option": "1/2",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
-            "KC2": 28,
-            "KC3": 20
-          }
-        },
-        {
-          "timestamp": 1774593535288,
-          "question_id": "KC2_Q1",
-          "kc": "KC2",
-          "selected_option": "2/4",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 3,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
-            "KC2": 28,
-            "KC3": 20
-          }
-        },
-        {
-          "timestamp": 1774593554696,
-          "question_id": "KC2_Q4",
-          "kc": "KC2",
-          "selected_option": "2/6",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
-            "KC2": 28,
-            "KC3": 20
-          }
-        }
-      ],
-      "remediation": null
-    },
-    "964cb02f-006d-4e20-9897-b7357b9ed1a7": {
-      "id": "964cb02f-006d-4e20-9897-b7357b9ed1a7",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774593714341,
-      "mastery": {
-        "KC1": 26,
-        "KC2": 20,
-        "KC3": 20
-      },
-      "current": {
-        "question_id": "KC2_Q1",
-        "hintLevel": 0,
-        "hintsUsed": 0,
-        "attempts": 0
-      },
-      "history": [
-        {
-          "timestamp": 1774593725290,
-          "question_id": "KC1_Q1",
-          "kc": "KC1",
-          "selected_option": "1/2",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
+            "KC1": 18,
             "KC2": 20,
-            "KC3": 20
-          }
-        }
-      ],
-      "remediation": null
-    },
-    "13da69dc-7cb2-45fa-92d9-2d015d9b2c20": {
-      "id": "13da69dc-7cb2-45fa-92d9-2d015d9b2c20",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774594061098,
-      "mastery": {
-        "KC1": 28,
-        "KC2": 20,
-        "KC3": 10
-      },
-      "current": {
-        "question_id": "KC3_Q1",
-        "hintLevel": 0,
-        "hintsUsed": 0,
-        "attempts": 0
-      },
-      "history": [
-        {
-          "timestamp": 1774594077252,
-          "question_id": "KC1_Q3",
-          "kc": "KC1",
-          "selected_option": "2/3",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 28,
-            "KC2": 20,
-            "KC3": 10
-          }
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 2015
         },
         {
-          "timestamp": 1774594081064,
-          "question_id": "KC3_Q6",
-          "kc": "KC3",
+          "timestamp": 1774628006089,
+          "question_id": "KC1_Q4",
+          "kc": "KC1",
+          "selected_option": "7/8",
+          "correct": false,
+          "misconception": "F004",
+          "hints_used": 0,
+          "attempts": 2,
+          "updated_mastery": {
+            "KC1": 18,
+            "KC2": 20,
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 4789
+        },
+        {
+          "timestamp": 1774628012505,
+          "question_id": "KC1_Q5",
+          "kc": "KC1",
           "selected_option": "true",
           "correct": true,
           "misconception": null,
           "hints_used": 0,
-          "attempts": 2,
+          "attempts": 3,
           "updated_mastery": {
-            "KC1": 28,
+            "KC1": 18,
             "KC2": 20,
-            "KC3": 10
-          }
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 1437
         },
         {
-          "timestamp": 1774594083641,
-          "question_id": "KC3_Q7",
-          "kc": "KC3",
+          "timestamp": 1774628015194,
+          "question_id": "KC1_Q6",
+          "kc": "KC1",
           "selected_option": [
-            "5/8"
+            "4/6"
           ],
           "correct": false,
           "misconception": "F004",
-          "hints_used": 0,
-          "attempts": 3,
-          "updated_mastery": {
-            "KC1": 28,
-            "KC2": 20,
-            "KC3": 10
-          }
-        },
-        {
-          "timestamp": 1774594089270,
-          "question_id": "KC3_Q8",
-          "kc": "KC3",
-          "selected_option": "5/6, 2/3, 3/5",
-          "correct": false,
-          "misconception": "F001",
           "hints_used": 0,
           "attempts": 4,
           "updated_mastery": {
-            "KC1": 28,
+            "KC1": 18,
             "KC2": 20,
-            "KC3": 10
-          }
-        }
-      ],
-      "remediation": null
-    },
-    "62a8a43f-f816-4644-ac84-9a19fb59201a": {
-      "id": "62a8a43f-f816-4644-ac84-9a19fb59201a",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774594225609,
-      "mastery": {
-        "KC1": 26,
-        "KC2": 20,
-        "KC3": 20
-      },
-      "current": {
-        "question_id": "KC2_Q1",
-        "hintLevel": 0,
-        "hintsUsed": 0,
-        "attempts": 0
-      },
-      "history": [
-        {
-          "timestamp": 1774594232495,
-          "question_id": "KC1_Q1",
-          "kc": "KC1",
-          "selected_option": "1/2",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
-            "KC2": 20,
-            "KC3": 20
-          }
-        }
-      ],
-      "remediation": null
-    },
-    "68500884-c315-42db-87a3-c66b88b8ea16": {
-      "id": "68500884-c315-42db-87a3-c66b88b8ea16",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774598358391,
-      "mastery": {
-        "KC1": 34,
-        "KC2": 1,
-        "KC3": 20
-      },
-      "current": {
-        "question_id": "KC2_Q4",
-        "hintLevel": 0,
-        "hintsUsed": 0,
-        "attempts": 0
-      },
-      "history": [
-        {
-          "timestamp": 1774598363758,
-          "question_id": "KC1_Q1",
-          "kc": "KC1",
-          "selected_option": "1/2",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 34,
-            "KC2": 1,
-            "KC3": 20
-          }
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 1460
         },
         {
-          "timestamp": 1774598367173,
-          "question_id": "KC2_Q7",
-          "kc": "KC2",
-          "selected_option": [
-            "3/10"
-          ],
+          "timestamp": 1774628017396,
+          "question_id": "KC1_Q7",
+          "kc": "KC1",
+          "selected_option": "5/2",
+          "correct": false,
+          "misconception": "F001",
+          "hints_used": 0,
+          "attempts": 5,
+          "updated_mastery": {
+            "KC1": 18,
+            "KC2": 20,
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 1040
+        },
+        {
+          "timestamp": 1774628025314,
+          "question_id": "KC1_Q8",
+          "kc": "KC1",
+          "selected_option": "4/6",
           "correct": false,
           "misconception": "F004",
           "hints_used": 0,
-          "attempts": 1,
+          "attempts": 6,
           "updated_mastery": {
-            "KC1": 34,
-            "KC2": 1,
-            "KC3": 20
-          }
-        },
-        {
-          "timestamp": 1774598376253,
-          "question_id": "KC2_Q1",
-          "kc": "KC2",
-          "selected_option": "3/4",
-          "correct": false,
-          "misconception": "F003",
-          "hints_used": 2,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 34,
-            "KC2": 1,
-            "KC3": 20
-          }
-        },
-        {
-          "timestamp": 1774598389757,
-          "question_id": "KC1_Q1",
-          "kc": "KC1",
-          "selected_option": "1/2",
-          "correct": true,
-          "misconception": null,
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 34,
-            "KC2": 1,
-            "KC3": 20
-          }
+            "KC1": 18,
+            "KC2": 20,
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 4806
         }
       ],
-      "remediation": null
+      "remediation": {
+        "kc": "KC1",
+        "code": "F004",
+        "message": "We noticed repeated F004. Let's do a quick correction cycle.",
+        "visualCorrection": null,
+        "targetedExplanation": "F004: Recount and apply the rule step by step."
+      },
+      "questionStates": {
+        "KC1_Q1": "correct",
+        "KC2_Q1": "skipped",
+        "KC1_Q3": "correct",
+        "KC1_Q4": "incorrect",
+        "KC1_Q2": "correct",
+        "KC1_Q5": "correct",
+        "KC1_Q6": "incorrect",
+        "KC1_Q7": "incorrect",
+        "KC1_Q8": "incorrect"
+      },
+      "metrics": {
+        "session_start_time": 1774627962724,
+        "session_end_time": null,
+        "time_taken_per_question": {
+          "KC1_Q1": 3695,
+          "KC1_Q3": 4440,
+          "KC1_Q2": 2015,
+          "KC1_Q4": 4789,
+          "KC1_Q5": 1437,
+          "KC1_Q6": 1460,
+          "KC1_Q7": 1040,
+          "KC1_Q8": 4806
+        },
+        "question_timestamp": {
+          "KC1_Q1": 1774627970714,
+          "KC1_Q3": 1774627991383,
+          "KC1_Q2": 1774628000320,
+          "KC1_Q4": 1774628006089,
+          "KC1_Q5": 1774628012505,
+          "KC1_Q6": 1774628015194,
+          "KC1_Q7": 1774628017396,
+          "KC1_Q8": 1774628025314
+        },
+        "misconception_frequency": {
+          "F001": 1,
+          "F002": 0,
+          "F003": 0,
+          "F004": 3
+        }
+      },
+      "lessonsViewed": [
+        "KC1"
+      ]
     },
-    "2a62cd7c-c5ea-4dc7-811e-79c2a4c0c08b": {
-      "id": "2a62cd7c-c5ea-4dc7-811e-79c2a4c0c08b",
-      "name": "Gaurav Khanna",
-      "createdAt": 1774599142624,
+    "2f6edda2-10a7-486c-8676-dd3958e63d9c": {
+      "id": "2f6edda2-10a7-486c-8676-dd3958e63d9c",
+      "name": "Gaurav",
+      "createdAt": 1774628047863,
       "mastery": {
         "KC1": 26,
         "KC2": 20,
-        "KC3": 1
+        "KC3": 20,
+        "KC4": 20,
+        "KC5": 20,
+        "KC6": 20,
+        "KC7": 20
       },
       "current": {
-        "question_id": "KC3_Q1",
+        "question_id": "KC1_Q1",
         "hintLevel": 0,
         "hintsUsed": 0,
-        "attempts": 0
+        "attempts": 0,
+        "startedAt": 1774628055085
       },
       "history": [
         {
-          "timestamp": 1774599144869,
+          "timestamp": 1774628366599,
           "question_id": "KC1_Q1",
           "kc": "KC1",
           "selected_option": "1/2",
@@ -576,43 +408,38 @@
           "updated_mastery": {
             "KC1": 26,
             "KC2": 20,
-            "KC3": 1
-          }
-        },
-        {
-          "timestamp": 1774599148930,
-          "question_id": "KC3_Q7",
-          "kc": "KC3",
-          "selected_option": [
-            "5/8"
-          ],
-          "correct": false,
-          "misconception": "F004",
-          "hints_used": 0,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
-            "KC2": 20,
-            "KC3": 1
-          }
-        },
-        {
-          "timestamp": 1774599160167,
-          "question_id": "KC3_Q1",
-          "kc": "KC3",
-          "selected_option": "Equal",
-          "correct": false,
-          "misconception": "F003",
-          "hints_used": 2,
-          "attempts": 1,
-          "updated_mastery": {
-            "KC1": 26,
-            "KC2": 20,
-            "KC3": 1
-          }
+            "KC3": 20,
+            "KC4": 20,
+            "KC5": 20,
+            "KC6": 20,
+            "KC7": 20
+          },
+          "time_taken": 311478
         }
       ],
-      "remediation": null
+      "remediation": null,
+      "questionStates": {
+        "KC1_Q1": "correct"
+      },
+      "metrics": {
+        "session_start_time": 1774628047863,
+        "session_end_time": null,
+        "time_taken_per_question": {
+          "KC1_Q1": 311478
+        },
+        "question_timestamp": {
+          "KC1_Q1": 1774628366599
+        },
+        "misconception_frequency": {
+          "F001": 0,
+          "F002": 0,
+          "F003": 0,
+          "F004": 0
+        }
+      },
+      "lessonsViewed": [
+        "KC1"
+      ]
     }
   }
 }

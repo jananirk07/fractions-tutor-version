@@ -46,8 +46,8 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="mt-7 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {["KC1", "KC2", "KC3"].map((kc) => (
+        <div className="mt-7 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {["KC1", "KC2", "KC3", "KC4", "KC5", "KC6", "KC7"].map((kc) => (
             <ProgressBar key={kc} kc={kc} mastery={mastery?.[kc] ?? 0} />
           ))}
         </div>

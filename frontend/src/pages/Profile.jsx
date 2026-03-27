@@ -24,6 +24,7 @@ export default function Profile() {
   }, [fetchProgress]);
 
   const chart = profile?.chart || [];
+  const ALL_KCS = ["KC1", "KC2", "KC3", "KC4", "KC5", "KC6", "KC7"];
 
   return (
     <div className="min-h-full bg-gradient-to-b from-slate-50 to-white">

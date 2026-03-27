@@ -1,9 +1,13 @@
 function createInitialMastery() {
   // Mastery is tracked per KC on 0..100.
   return {
-    KC1: 20,
-    KC2: 20,
-    KC3: 20,
+    KC1: 0,
+    KC2: 0,
+    KC3: 0,
+    KC4: 0,
+    KC5: 0,
+    KC6: 0,
+    KC7: 0,
   };
 }
 
@@ -21,7 +25,7 @@ function updateMastery({
   recentAccuracy = 0.5,
 }) {
   const current = mastery?.[kc];
-  const base = typeof current === "number" ? current : 20;
+  const base = typeof current === "number" ? current : 0;
 
   // Multi-factor mastery update:
   // - correctness
@@ -50,4 +54,3 @@ module.exports = {
   createInitialMastery,
   updateMastery,
 };
-

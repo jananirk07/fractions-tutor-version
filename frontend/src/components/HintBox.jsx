@@ -1,12 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function HintBox({ hintTexts, hintLevel, onRequestHint, loading = false, error = null }) {
+export default function HintBox({ hintTexts, hintLevel, onRequestHint, loading = false, error = null, maxHints = 3 }) {
   const [open, setOpen] = React.useState(false);
 
-  const maxLevel = 3;
-  const nextLevel = hintLevel ?? 1;
-  const canRequest = nextLevel <= maxLevel && !loading;
+  // hintLevel = how many hints have been revealed so far (0 = none shown yet)
+  // nextLevel  = the next hint number to request (1, 2, or 3)
+  const nextLevel = (hintLevel ?? 0) + 1;
+  const canRequest = nextLevel <= maxHints && !loading;
+
+  let buttonLabel;
+  if (loading) {
+    buttonLabel = "Loading...";
+  } else if (!canRequest) {
+    buttonLabel = "No more hints";
+  } else {
+    buttonLabel = `Show Hint ${nextLevel}`;
+  }
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -22,6 +32,7 @@ export default function HintBox({ hintTexts, hintLevel, onRequestHint, loading =
         <motion.button
           type="button"
           onClick={async () => {
+            if (!canRequest) return;
             await onRequestHint();
             setOpen(true);
           }}
@@ -35,7 +46,7 @@ export default function HintBox({ hintTexts, hintLevel, onRequestHint, loading =
           whileHover={canRequest ? { y: -2 } : undefined}
           whileTap={canRequest ? { scale: 0.99 } : undefined}
         >
-          {loading ? "Loading..." : `Show Hint ${Math.min(nextLevel, maxLevel)}`}
+          {buttonLabel}
         </motion.button>
       </div>
 
@@ -64,7 +75,7 @@ export default function HintBox({ hintTexts, hintLevel, onRequestHint, loading =
             );
           })}
           {!hintTexts?.length ? (
-            <div className="text-sm text-slate-600">Press "Show Hint 1" to begin.</div>
+            <div className="text-sm text-slate-600">Press &quot;Show Hint 1&quot; to begin.</div>
           ) : null}
         </div>
       ) : (
@@ -73,4 +84,3 @@ export default function HintBox({ hintTexts, hintLevel, onRequestHint, loading =
     </div>
   );
 }
-
