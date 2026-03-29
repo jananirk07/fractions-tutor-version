@@ -1,4 +1,4 @@
-const DEFAULT_API_BASE = "http://localhost:5000";
+const DEFAULT_API_BASE = "https://fractions-tutor-backend.onrender.com";
 
 export function getApiBaseUrl() {
   // Vite exposes env vars prefixed with VITE_
