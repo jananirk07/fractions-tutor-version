@@ -247,6 +247,7 @@ function TeachGuided({ lesson, studentId, kc, onComplete }) {
     <motion.div
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
+
       exit={{ opacity: 0, y: -12 }}
       className="rounded-2xl border border-amber-200 bg-white p-6 shadow-sm"
     >
@@ -320,7 +321,12 @@ function TeachGuided({ lesson, studentId, kc, onComplete }) {
 
 // ── Main Tutor Component ──────────────────────────────────────────────────────
 export default function Tutor() {
-  const navigate = useNavigate();
+const [sessionCorrect, setSessionCorrect] = React.useState(0);
+const [sessionWrong, setSessionWrong] = React.useState(0);
+const [sessionAttempted, setSessionAttempted] = React.useState(0);
+const [sessionHintsUsed, setSessionHintsUsed] = React.useState(0);
+const [sessionStartTime] = React.useState(Date.now()); 
+ const navigate = useNavigate();
 
   const name = useTutorStore((s) => s.name);
   const student_id = useTutorStore((s) => s.student_id);
@@ -461,7 +467,9 @@ export default function Tutor() {
                         ? "border-amber-300 bg-amber-50 text-amber-700"
                         : "border-slate-200 bg-white text-slate-700",
                 ].join(" ")}
-                title="Time for this question only"
+ 
+
+               title="Time for this question only"
               >
                 ⏱ {formatTime(frozenSeconds != null ? frozenSeconds : elapsedSeconds)}
               </div>
@@ -605,10 +613,15 @@ export default function Tutor() {
                         selected_option={seqSelected}
                         onSelectOption={async (opt) => {
                           if (!seqQuestionId || seqOutcome !== null) return;
-                          setSeqSelected(opt);
+setSessionAttempted((v) => v + 1);                          setSeqSelected(opt);
                           const timeTaken = questionStartTime ? Date.now() - questionStartTime : null;
                           try {
                             const data = await submitAnswerForQuestion(seqQuestionId, opt, timeTaken);
+if (data.correct) {
+  setSessionCorrect((v) => v + 1);
+} else {
+  setSessionWrong((v) => v + 1);
+}
                             const secs =
                               typeof timeTaken === "number" && timeTaken > 0
                                 ? Math.max(1, Math.round(timeTaken / 1000))
@@ -622,6 +635,42 @@ export default function Tutor() {
                               remediation: data.remediation || null,
                               responseTimeFeedback: data.responseTimeFeedback || null,
                             });
+
+
+// 🔵 8.7 — SEND SESSION PAYLOAD (ON COMPLETION SIGNAL)
+if (data?.next_question === null || data?.done === true) {
+  const token = sessionStorage.getItem("token");
+
+  const payload = {
+    student_id: sessionStorage.getItem("student_id"),
+    session_id: sessionStorage.getItem("session_id"),
+    chapter_id: "grade6_fractions",
+    timestamp: new Date().toISOString(),
+    session_status: "completed",
+    correct_answers: 8,
+    wrong_answers: 2,
+    questions_attempted: 10,
+    total_questions: 10,
+    retry_count: 1,
+    hints_used: 2,
+    total_hints_embedded: 5,
+    time_spent_seconds: 300,
+    topic_completion_ratio: 1
+  };
+
+  try {
+    await fetch("https://kaushik-dev.online/api/recommend/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`
+      },
+      body: JSON.stringify(payload)
+    });
+  } catch (err) {
+    console.error("Submission failed:", err);
+  }
+}
                           } catch (e) {
                             console.error(e);
                           }
