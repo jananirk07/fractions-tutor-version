@@ -5,6 +5,7 @@ import QuestionCard from "../components/QuestionCard.jsx";
 import HintBox from "../components/HintBox.jsx";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../lib/api";
+import { LogOut } from "lucide-react";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function formatTime(seconds) {
@@ -327,6 +328,21 @@ const [sessionAttempted, setSessionAttempted] = React.useState(0);
 const [sessionHintsUsed, setSessionHintsUsed] = React.useState(0);
 const [sessionStartTime] = React.useState(Date.now()); 
  const navigate = useNavigate();
+   const MAIN_PORTAL_URL = "https://kaushik-dev.online/dashboard";
+
+  const handleExit = () => {
+    try {
+      sessionStorage.removeItem("token");
+      sessionStorage.removeItem("session_id");
+      sessionStorage.removeItem("student_id");
+      sessionStorage.removeItem("student_name");
+      localStorage.removeItem("fractions-tutor-session");
+    } catch {
+      // ignore
+    }
+
+    window.location.href = MAIN_PORTAL_URL;
+  };
 
   const name = useTutorStore((s) => s.name);
   const student_id = useTutorStore((s) => s.student_id);
@@ -483,6 +499,17 @@ const [sessionStartTime] = React.useState(Date.now());
             >
               View Profile
             </motion.button>
+
+            <button
+              type="button"
+              onClick={handleExit}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:bg-slate-50 hover:text-slate-900"
+              title="Exit to main portal"
+              aria-label="Exit to main portal"
+            >
+              <LogOut size={18} />
+            </button>
+
           </div>
         </div>
 

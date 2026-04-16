@@ -82,6 +82,31 @@ const useTutorStore = create((set, get) => ({
     persistSessionToStorage(data.student_id, data.name || name || "Student");
   },
 
+    startExternalSession: async ({ student_id, name }) => {
+    set({ status: "loading", error: null });
+
+    const safeStudentId = encodeURIComponent(student_id);
+    const safeName = encodeURIComponent((name || "Student").trim());
+
+    const data = await api.get(
+      `/api/start-session?student_id=${safeStudentId}&name=${safeName}`
+    );
+
+    set({
+      student_id: data.student_id,
+      name: data.name || name || "Student",
+      mastery: data.mastery,
+      questionStates: data.questionStates || {},
+      lessonsViewed: data.lessonsViewed || [],
+      status: "ready",
+      sessionQueue: [],
+      activeKC: "KC1",
+      lessonPhase: (data.lessonsViewed || []).includes("KC1") ? "questions" : "lesson",
+    });
+
+    persistSessionToStorage(data.student_id, data.name || name || "Student");
+  },
+
   /** Resume last student from localStorage; server db holds mastery/history by student id. */
   restoreSessionFromStorage: async () => {
     if (typeof localStorage === "undefined") return false;
